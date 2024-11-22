@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Intercept:</legend>
+                <div class="input-container">
+                    <textarea id="intercept" rows="5"></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div class="button-container">
+                    <input type="button" id="resetBtn" value="Reset" onclick="resetFunction()" class="button button2">
+                    <input type="button" id="sequencesBtn" value="Find Repeated Sequences" onclick="sequences()"
+                        class="button button2">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ciphertext:</legend>
+                <div class="input-container">
+                    <textarea id="decryptedText" rows="10" readonly></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Finding the Key:</legend>
+                <div class="key-container">
+                    <div id="keyLengthDiv">
+                        <label>Keyword Length</label>
+                        <input id="keyLength" type="number" value="2" min="2" max="20" onchange="keyChange()">
+                    </div>
+                    <div id="keyLettersDiv">
+                        <label>Keyword Letters</label>
+                        <select id="keywordList" size="4" onchange="checkLetter()">
+                            <option value="L1">L1</option>
+                            <option value="L2">L2</option>
+                        </select>
+                    </div>
+                    <div id="shiftDiv">
+                        <label>Shift</label>
+                        <input id="shift" type="number" value="0" min="0" max="25" onchange="changeShift()" disabled>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="input-container" id="frequenciesGraph"></div>
+        <div class="input-container" id="frequenciesGraph1"></div>
+        <div class="input-container" id="frequenciesTable"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

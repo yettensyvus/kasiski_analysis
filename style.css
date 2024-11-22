@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* General container style */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for fieldsets and legends */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+/* Style for legends */
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Flex container for form inputs */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Textarea focus effect */
+textarea:focus {
+    border-color: #402455;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Button container style, placed below the textareas */
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Button styling */
+.button {
+    padding: 12px 20px;
+    margin: 0px 50px;
+    width: 45%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button2 {
+    background-color: #402455; /* Base color */
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
+}
+
+.button2:hover {
+    background-color: #5a356f; /* Lighter shade for hover */
+    transform: scale(1.05);
+}
+
+.button2:active {
+    background-color: #2e1739; /* Darker shade for active state */
+}
+
+
+/* Key container layout for "Finding the Key" fieldset */
+.key-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Styles for individual form controls within the "Finding the Key" section */
+#keyLengthDiv, #keyLettersDiv, #shiftDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input fields for keyword length and shift */
+input[type="number"], select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for input fields */
+input[type="number"]:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input[type="text"] {
+    width:100%;
+    border:none;
+    background-color:transparent;
+    text-align:center; 
+    user-select:none;
+    outline:none;
+}
+
+
+/* Label styling */
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Styling for the select input */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+/* Hover effect on the select dropdown */
+select:hover {
+    border-color: #4CAF50;
+}
+
+/* Hidden class for elements that should be hidden initially */
+.hidden {
+    visibility: hidden;
+}
+
+/* Styling for the form overall */
+form {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+table {
+    background: linear-gradient(to right, #f7f7f7, #e3e3e3);
+    border: 1;
+    border-spacing: 5px; /* Adjust this value to control the space between cells */
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: center; /* You can set this to 'center' for better alignment */
+    width: 20px; /* Set a fixed width */
+    height: 20px; /* Set the same value for height to make it square */
+}
+
+
+/* Canvas container styling */
+canvas {
+    display: block;
+    margin: 0 auto;
+    width: 20px; /* Adjust width */
+    height: 100px; /* Adjust height */
+}
+
+#canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#freqGraph {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.freq-col {
+    width: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
